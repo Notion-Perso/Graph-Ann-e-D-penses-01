@@ -112,12 +112,11 @@ Highcharts.chart('container', {
                     click: function () {
                         // Redirection vers une URL spécifique basée sur l'année cliquée
                         var urlMap = {
-                            '2024': 'https://www.notion.so/D-pense-1153990f694080c7936aea4deab88be6?pvs=4',
-                            '2025': 'https://example.com/2025',
-                            '2026': 'https://example.com/2026',
-                            '2027': 'https://example.com/2027',
-                            '2028': 'https://example.com/2028',
-                            '2029': 'https://example.com/2029'
+                            '2021': 'https://www.notion.so/D-pense-1153990f694080c7936aea4deab88be6?pvs=4',
+                            '2022': 'https://example.com/2025',
+                            '2023': 'https://example.com/2026',
+                            '2024': 'https://example.com/2027',
+                            '2025': 'https://example.com/2028'
                         };
                         // Ouvre la page correspondant à l'année cliquée
                         window.open(urlMap[this.name], '_blank'); // Ouvre dans un nouvel onglet
@@ -130,20 +129,18 @@ Highcharts.chart('container', {
     series: [{
         name: 'Montants',
         data: [
-            ['2024', 1500], // Montant pour l'année 2024
-            ['2025', 2000], // Montant pour l'année 2025
-            ['2026', 2500], // Montant pour l'année 2026
-            ['2027', 3000], // Montant pour l'année 2027
-            ['2028', 3500], // Montant pour l'année 2028
-            ['2029', 4000]  // Montant pour l'année 2029
+            ['Montants', 10 148.04], // Montant pour l'année 2021
+            ['Montants', 16 653.07], // Montant pour l'année 2022
+            ['Montants', 19 126.53], // Montant pour l'année 2023
+            ['Montants', 21 755.79], // Montant pour l'année 2024
+            ['Montants', 5 235.81], // Montant pour l'année 2025
         ],
         colors: [ // Couleurs personnalisées pour les sections
-            '#ffc75f', // Couleur pour 2024
-            '#9999ff', // Couleur pour 2025
-            '#fefedf', // Couleur pour 2026
-            '#00c9a7', // Couleur pour 2027
-            '#c34a36', // Couleur pour 2028
-            '#009efa'  // Couleur pour 2029
+            '#ffc75f', // Couleur pour 2021
+            '#9999ff', // Couleur pour 2022
+            '#fefedf', // Couleur pour 2023
+            '#00c9a7', // Couleur pour 2024
+            '#c34a36', // Couleur pour 2025
         ],
     }],
     plotBackgroundColor: 'transparent' // Arrière-plan de la zone de tracé transparent
